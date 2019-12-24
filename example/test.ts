@@ -1,2 +1,3 @@
-const a = require("../dist/main")
-console.log(a)
+import arrayConcat from "../src/index"
+
+console.log(arrayConcat)

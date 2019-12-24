@@ -5,14 +5,17 @@
   "main": "dist/main.js",
   "module": "src/index.js",
   "scripts": {
-    "build": "webpack --mode=production ./config/webpack.index.js",
-    "dev": "webpack --mode=development ./config/webpack.index.js"
+    "build": "webpack --mode=production",
+    "dev": "webpack-dev-server --watch --mode=development"
   },
   "author": "No3ming",
   "license": "MIT",
   "devDependencies": {
+    "lodash": "^4.17.15",
     "ts-loader": "^6.2.1",
+    "typescript": "^3.7.4",
     "webpack": "^4.41.4",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
   }
 }
