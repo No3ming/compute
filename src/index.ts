@@ -1,4 +1,4 @@
-export const arrayConcat = (arr: any[], ...args: any[]) => [].concat(arr, ...args)
+export const arrayConcat = (arr: number[], ...args: any[]): number[] => arr.concat(...args)
 
 export const def = 12
 
