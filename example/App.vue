@@ -50,7 +50,7 @@
 <script lang="ts">
   import Vue from 'vue'
   import routes from '@/routes'
-  import 'highlight.js/styles/dark.css'
+  import 'highlight.js/styles/monokai-sublime.css'
   export default Vue.extend({
     data: () => {
       return {
@@ -76,5 +76,11 @@
   .v-application code:after, .v-application code:before, .v-application kbd:after, .v-application kbd:before {
     content: "";
     letter-spacing: -1px;
+  }
+  pre {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: #23241f;
   }
 </style>
