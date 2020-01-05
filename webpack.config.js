@@ -4,6 +4,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
+const marked = require("marked");
+const hlt = require("highlight.js")
+
+const renderer = new marked.Renderer();
 
 module.exports = {
   entry: {
@@ -75,6 +79,17 @@ module.exports = {
             loader: "markdown-loader",
             options: {
               /* your options here */
+              pedantic: true,
+              renderer,
+              highlight (code) {
+                return hlt.highlightAuto(code).value;
+              },
+              gfm: true,
+              breaks: false,
+              sanitize: false,
+              smartLists: true,
+              smartypants: false,
+              xhtml: false
             }
           }
         ]

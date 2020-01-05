@@ -50,7 +50,7 @@
 <script lang="ts">
   import Vue from 'vue'
   import routes from '@/routes'
-  import 'highlight.js/styles/github.css'
+  import 'highlight.js/styles/dark.css'
   export default Vue.extend({
     data: () => {
       return {
@@ -67,3 +67,14 @@
     }
   })
 </script>
+<style>
+  .v-application code {
+    background: none;
+    box-shadow: none;
+    color: #fff;
+  }
+  .v-application code:after, .v-application code:before, .v-application kbd:after, .v-application kbd:before {
+    content: "";
+    letter-spacing: -1px;
+  }
+</style>
