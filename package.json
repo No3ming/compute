@@ -44,7 +44,7 @@
     "vue-markdown-loader": "^2.4.1",
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.6.11",
-    "vuetify": "^2.1.15",
+    "vuetify": "^2.6.10",
     "vuetify-loader": "^1.4.3",
     "webpack-env": "^0.8.0"
   }
